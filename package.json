@@ -1,6 +1,6 @@
 {
   "name": "methods",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "HTTP methods that node supports",
   "main": "index.js",
   "scripts": {
