@@ -1,4 +1,14 @@
 
+var http = require('http');
+
+if (http.METHODS) {
+  module.exports = http.METHODS.map(function(method){
+    return method.toLowerCase();
+  });
+
+  return;
+}
+
 module.exports = [
   'get',
   'post',
@@ -22,5 +32,6 @@ module.exports = [
   'notify',
   'subscribe',
   'unsubscribe',
-  'patch'
+  'patch',
+  'search'
 ];
