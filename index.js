@@ -21,6 +21,7 @@ module.exports = [
   'lock',
   'mkcol',
   'move',
+  'purge',
   'propfind',
   'proppatch',
   'unlock',
