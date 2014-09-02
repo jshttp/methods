@@ -2,10 +2,6 @@
   "name": "methods",
   "version": "1.1.0",
   "description": "HTTP methods that node supports",
-  "main": "index.js",
-  "scripts": {
-    "test": "./node_modules/mocha/bin/mocha"
-  },
   "keywords": [
     "http",
     "methods"
@@ -14,11 +10,18 @@
     "name": "TJ Holowaychuk"
   },
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/visionmedia/node-methods.git"
-  },
+  "repository": "jshttp/methods",
   "devDependencies": {
-    "mocha": "1.17.x"
-  }
+    "istanbul": "0.3",
+    "mocha": "1"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec",
+    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot",
+    "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter dot"
+  },
+  "files": [
+    "index.js",
+    "LICENSE"
+  ]
 }
