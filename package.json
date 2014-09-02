@@ -15,13 +15,14 @@
     "istanbul": "0.3",
     "mocha": "1"
   },
+  "files": [
+    "index.js",
+    "HISTORY.md",
+    "LICENSE"
+  ],
   "scripts": {
     "test": "mocha --reporter spec",
     "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot",
     "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter dot"
-  },
-  "files": [
-    "index.js",
-    "LICENSE"
-  ]
+  }
 }
