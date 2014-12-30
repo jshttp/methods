@@ -1,3 +1,8 @@
+unreleased
+==========
+
+  * Improve `browserify` support
+
 1.1.0 / 2014-07-05
 ==================
 
