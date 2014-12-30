@@ -1,5 +1,5 @@
-unreleased
-==========
+1.1.1 / 2014-12-30
+==================
 
   * Improve `browserify` support
 
