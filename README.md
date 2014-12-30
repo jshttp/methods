@@ -6,8 +6,28 @@
 [![Build Status][travis-image]][travis-url]
 [![Test Coverage][coveralls-image]][coveralls-url]
 
-
   HTTP verbs that node core's parser supports.
+
+
+## Install
+
+```bash
+$ npm install methods
+```
+
+## API
+
+```js
+var methods = require('methods')
+```
+
+### methods
+
+This is an array of lower-case method names that Node.js supports.
+
+## License
+
+[MIT](LICENSE)
 
 [npm-image]: https://img.shields.io/npm/v/methods.svg?style=flat
 [npm-url]: https://npmjs.org/package/methods
