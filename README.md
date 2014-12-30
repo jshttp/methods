@@ -31,7 +31,7 @@ This is an array of lower-case method names that Node.js supports.
 
 [npm-image]: https://img.shields.io/npm/v/methods.svg?style=flat
 [npm-url]: https://npmjs.org/package/methods
-[node-version-image]: https://img.shields.io/badge/node.js-%3E%3D_0.6-brightgreen.svg?style=flat
+[node-version-image]: https://img.shields.io/node/v/methods.svg?style=flat
 [node-version-url]: http://nodejs.org/download/
 [travis-image]: https://img.shields.io/travis/jshttp/methods.svg?style=flat
 [travis-url]: https://travis-ci.org/jshttp/methods
