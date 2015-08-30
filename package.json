@@ -10,7 +10,7 @@
   "license": "MIT",
   "repository": "jshttp/methods",
   "devDependencies": {
-    "istanbul": "0.3.18",
+    "istanbul": "0.3.19",
     "mocha": "1.21.5"
   },
   "files": [
