@@ -1,3 +1,13 @@
+/*!
+ * methods
+ * Copyright(c) 2013-2014 TJ Holowaychuk
+ * MIT Licensed
+ */
+
+/**
+ * Module dependencies.
+ * @private
+ */
 
 var http = require('http');
 
