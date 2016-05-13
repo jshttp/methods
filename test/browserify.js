@@ -4,6 +4,7 @@ var http = require('http')
 var methods = null
 var path = require('path')
 var run = browserify ? describe : describe.skip
+var vm = require('vm')
 
 run('when browserified', function () {
   before(function (done) {
@@ -16,7 +17,7 @@ run('when browserified', function () {
 
     // bundle and eval
     b.bundle(function (err, buf) {
-      var require = eval(buf.toString())
+      var require = vm.runInNewContext(buf.toString())
       methods = require('methods')
       done()
     })
