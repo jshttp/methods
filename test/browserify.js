@@ -1,6 +1,5 @@
 var assert = require('assert')
 var browserify = tryRequire('browserify')
-var http = require('http')
 var methods = null
 var path = require('path')
 var run = browserify ? describe : describe.skip
@@ -17,6 +16,7 @@ run('when browserified', function () {
 
     // bundle and eval
     b.bundle(function (err, buf) {
+      if (err) return done(err)
       var require = vm.runInNewContext(buf.toString())
       methods = require('methods')
       done()
@@ -30,15 +30,15 @@ run('when browserified', function () {
       })
     })
 
-    it('should only have lower-case entries', function() {
-      for (var i = 0; i < methods.length; i ++) {
+    it('should only have lower-case entries', function () {
+      for (var i = 0; i < methods.length; i++) {
         assert(methods[i], methods[i].toLowerCase(), methods[i] + ' is lower-case')
       }
     })
   })
 })
 
-function tryRequire(name) {
+function tryRequire (name) {
   try {
     return require(name)
   } catch (e) {

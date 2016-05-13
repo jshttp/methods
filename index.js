@@ -5,31 +5,31 @@
  * MIT Licensed
  */
 
-'use strict';
+'use strict'
 
 /**
  * Module dependencies.
  * @private
  */
 
-var http = require('http');
+var http = require('http')
 
 /**
  * Module exports.
  * @public
  */
 
-module.exports = getCurrentNodeMethods() || getBasicNodeMethods();
+module.exports = getCurrentNodeMethods() || getBasicNodeMethods()
 
 /**
  * Get the current Node.js methods.
  * @private
  */
 
-function getCurrentNodeMethods() {
-  return http.METHODS && http.METHODS.map(function lowerCaseMethod(method) {
-    return method.toLowerCase();
-  });
+function getCurrentNodeMethods () {
+  return http.METHODS && http.METHODS.map(function lowerCaseMethod (method) {
+    return method.toLowerCase()
+  })
 }
 
 /**
@@ -37,7 +37,7 @@ function getCurrentNodeMethods() {
  * @private
  */
 
-function getBasicNodeMethods() {
+function getBasicNodeMethods () {
   return [
     'get',
     'post',
@@ -65,5 +65,5 @@ function getBasicNodeMethods() {
     'patch',
     'search',
     'connect'
-  ];
+  ]
 }
