@@ -10,15 +10,18 @@
   "license": "MIT",
   "repository": "jshttp/methods",
   "devDependencies": {
+    "csv-parse": "1.1.7",
     "eslint": "3.9.1",
     "eslint-config-standard": "6.2.1",
     "eslint-plugin-promise": "3.3.1",
     "eslint-plugin-standard": "2.0.1",
     "istanbul": "0.4.5",
-    "mocha": "1.21.5"
+    "mocha": "1.21.5",
+    "request": "2.78.0"
   },
   "files": [
     "index.js",
+    "methods.json",
     "HISTORY.md",
     "LICENSE"
   ],
@@ -26,10 +29,13 @@
     "node": ">= 0.6"
   },
   "scripts": {
+    "build": "node scripts/build",
+    "fetch": "node scripts/fetch-iana",
     "lint": "eslint .",
     "test": "mocha --reporter spec --bail --check-leaks test/",
     "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/",
-    "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/"
+    "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/",
+    "update": "npm run fetch && npm run build"
   },
   "browser": {
     "http": false

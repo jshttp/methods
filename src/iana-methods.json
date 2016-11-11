@@ -1,0 +1,277 @@
+{
+  "acl": {
+    "idempotent": true,
+    "safe": false,
+    "sources": [
+      "https://tools.ietf.org/html/rfc3744#section-8.1"
+    ]
+  },
+  "baseline-control": {
+    "idempotent": true,
+    "safe": false,
+    "sources": [
+      "https://tools.ietf.org/html/rfc3253#section-12.6"
+    ]
+  },
+  "bind": {
+    "idempotent": true,
+    "safe": false,
+    "sources": [
+      "https://tools.ietf.org/html/rfc5842#section-4"
+    ]
+  },
+  "checkin": {
+    "idempotent": true,
+    "safe": false,
+    "sources": [
+      "https://tools.ietf.org/html/rfc3253#section-4.4",
+      "https://tools.ietf.org/html/rfc3253#section-9.4"
+    ]
+  },
+  "checkout": {
+    "idempotent": true,
+    "safe": false,
+    "sources": [
+      "https://tools.ietf.org/html/rfc3253#section-4.3",
+      "https://tools.ietf.org/html/rfc3253#section-8.8"
+    ]
+  },
+  "connect": {
+    "idempotent": false,
+    "safe": false,
+    "sources": [
+      "https://tools.ietf.org/html/rfc7231#section-4.3.6"
+    ]
+  },
+  "copy": {
+    "idempotent": true,
+    "safe": false,
+    "sources": [
+      "https://tools.ietf.org/html/rfc4918#section-9.8"
+    ]
+  },
+  "delete": {
+    "idempotent": true,
+    "safe": false,
+    "sources": [
+      "https://tools.ietf.org/html/rfc7231#section-4.3.5"
+    ]
+  },
+  "get": {
+    "idempotent": true,
+    "safe": true,
+    "sources": [
+      "https://tools.ietf.org/html/rfc7231#section-4.3.1"
+    ]
+  },
+  "head": {
+    "idempotent": true,
+    "safe": true,
+    "sources": [
+      "https://tools.ietf.org/html/rfc7231#section-4.3.2"
+    ]
+  },
+  "label": {
+    "idempotent": true,
+    "safe": false,
+    "sources": [
+      "https://tools.ietf.org/html/rfc3253#section-8.2"
+    ]
+  },
+  "link": {
+    "idempotent": true,
+    "safe": false,
+    "sources": [
+      "https://tools.ietf.org/html/rfc2068#section-19.6.1.2"
+    ]
+  },
+  "lock": {
+    "idempotent": false,
+    "safe": false,
+    "sources": [
+      "https://tools.ietf.org/html/rfc4918#section-9.10"
+    ]
+  },
+  "merge": {
+    "idempotent": true,
+    "safe": false,
+    "sources": [
+      "https://tools.ietf.org/html/rfc3253#section-11.2"
+    ]
+  },
+  "mkactivity": {
+    "idempotent": true,
+    "safe": false,
+    "sources": [
+      "https://tools.ietf.org/html/rfc3253#section-13.5"
+    ]
+  },
+  "mkcalendar": {
+    "idempotent": true,
+    "safe": false,
+    "sources": [
+      "https://tools.ietf.org/html/rfc4791#section-5.3.1"
+    ]
+  },
+  "mkcol": {
+    "idempotent": true,
+    "safe": false,
+    "sources": [
+      "https://tools.ietf.org/html/rfc4918#section-9.3"
+    ]
+  },
+  "mkredirectref": {
+    "idempotent": true,
+    "safe": false,
+    "sources": [
+      "https://tools.ietf.org/html/rfc4437#section-6"
+    ]
+  },
+  "mkworkspace": {
+    "idempotent": true,
+    "safe": false,
+    "sources": [
+      "https://tools.ietf.org/html/rfc3253#section-6.3"
+    ]
+  },
+  "move": {
+    "idempotent": true,
+    "safe": false,
+    "sources": [
+      "https://tools.ietf.org/html/rfc4918#section-9.9"
+    ]
+  },
+  "options": {
+    "idempotent": true,
+    "safe": true,
+    "sources": [
+      "https://tools.ietf.org/html/rfc7231#section-4.3.7"
+    ]
+  },
+  "orderpatch": {
+    "idempotent": true,
+    "safe": false,
+    "sources": [
+      "https://tools.ietf.org/html/rfc3648#section-7"
+    ]
+  },
+  "patch": {
+    "idempotent": false,
+    "safe": false,
+    "sources": [
+      "https://tools.ietf.org/html/rfc5789#section-2"
+    ]
+  },
+  "post": {
+    "idempotent": false,
+    "safe": false,
+    "sources": [
+      "https://tools.ietf.org/html/rfc7231#section-4.3.3"
+    ]
+  },
+  "pri": {
+    "idempotent": true,
+    "safe": true,
+    "sources": [
+      "https://tools.ietf.org/html/rfc7540#section-3.5"
+    ]
+  },
+  "propfind": {
+    "idempotent": true,
+    "safe": true,
+    "sources": [
+      "https://tools.ietf.org/html/rfc4918#section-9.1"
+    ]
+  },
+  "proppatch": {
+    "idempotent": true,
+    "safe": false,
+    "sources": [
+      "https://tools.ietf.org/html/rfc4918#section-9.2"
+    ]
+  },
+  "put": {
+    "idempotent": true,
+    "safe": false,
+    "sources": [
+      "https://tools.ietf.org/html/rfc7231#section-4.3.4"
+    ]
+  },
+  "rebind": {
+    "idempotent": true,
+    "safe": false,
+    "sources": [
+      "https://tools.ietf.org/html/rfc5842#section-6"
+    ]
+  },
+  "report": {
+    "idempotent": true,
+    "safe": true,
+    "sources": [
+      "https://tools.ietf.org/html/rfc3253#section-3.6"
+    ]
+  },
+  "search": {
+    "idempotent": true,
+    "safe": true,
+    "sources": [
+      "https://tools.ietf.org/html/rfc5323#section-2"
+    ]
+  },
+  "trace": {
+    "idempotent": true,
+    "safe": true,
+    "sources": [
+      "https://tools.ietf.org/html/rfc7231#section-4.3.8"
+    ]
+  },
+  "unbind": {
+    "idempotent": true,
+    "safe": false,
+    "sources": [
+      "https://tools.ietf.org/html/rfc5842#section-5"
+    ]
+  },
+  "uncheckout": {
+    "idempotent": true,
+    "safe": false,
+    "sources": [
+      "https://tools.ietf.org/html/rfc3253#section-4.5"
+    ]
+  },
+  "unlink": {
+    "idempotent": true,
+    "safe": false,
+    "sources": [
+      "https://tools.ietf.org/html/rfc2068#section-19.6.1.3"
+    ]
+  },
+  "unlock": {
+    "idempotent": true,
+    "safe": false,
+    "sources": [
+      "https://tools.ietf.org/html/rfc4918#section-9.11"
+    ]
+  },
+  "update": {
+    "idempotent": true,
+    "safe": false,
+    "sources": [
+      "https://tools.ietf.org/html/rfc3253#section-7.1"
+    ]
+  },
+  "updateredirectref": {
+    "idempotent": true,
+    "safe": false,
+    "sources": [
+      "https://tools.ietf.org/html/rfc4437#section-7"
+    ]
+  },
+  "version-control": {
+    "idempotent": true,
+    "safe": false,
+    "sources": [
+      "https://tools.ietf.org/html/rfc3253#section-3.5"
+    ]
+  }
+}
