@@ -43,13 +43,13 @@ otherwise it is a snapshot of the verbs from Node.js 0.10.
 
 [MIT](LICENSE)
 
-[npm-image]: https://img.shields.io/npm/v/methods.svg?style=flat
+[npm-image]: https://img.shields.io/npm/v/methods.svg
 [npm-url]: https://npmjs.org/package/methods
-[node-version-image]: https://img.shields.io/node/v/methods.svg?style=flat
+[node-version-image]: https://img.shields.io/node/v/methods.svg
 [node-version-url]: https://nodejs.org/en/download/
-[travis-image]: https://img.shields.io/travis/jshttp/methods.svg?style=flat
+[travis-image]: https://img.shields.io/travis/jshttp/methods.svg
 [travis-url]: https://travis-ci.org/jshttp/methods
-[coveralls-image]: https://img.shields.io/coveralls/jshttp/methods.svg?style=flat
+[coveralls-image]: https://img.shields.io/coveralls/jshttp/methods.svg
 [coveralls-url]: https://coveralls.io/r/jshttp/methods?branch=master
-[downloads-image]: https://img.shields.io/npm/dm/methods.svg?style=flat
+[downloads-image]: https://img.shields.io/npm/dm/methods.svg
 [downloads-url]: https://npmjs.org/package/methods
