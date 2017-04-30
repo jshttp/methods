@@ -19,7 +19,44 @@ var http = require('http')
  * @public
  */
 
-module.exports = getCurrentNodeMethods() || getBasicNodeMethods()
+module.exports = {
+  methods: getCurrentNodeMethods() || getBasicNodeMethods(),
+  isSafe,
+  isIdempotent
+}
+
+/**
+ * Get 'safe' property of given method
+ * @public
+ */
+
+function isSafe (method) {
+  return getMethodData()[method].safe
+}
+
+/**
+ * Get 'idempotent' property of given method
+ * @public
+ */
+
+function isIdempotent (method) {
+  return getMethodData()[method].idempotent
+}
+
+/**
+ * Lazy load method data.
+ * @private
+ */
+
+var methodData
+
+function getMethodData () {
+  if (!methodData) {
+    methodData = JSON.parse(require('fs').readFileSync('methods.json'))
+  }
+
+  return methodData
+}
 
 /**
  * Get the current Node.js methods.

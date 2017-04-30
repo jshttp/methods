@@ -10,12 +10,14 @@
   "license": "MIT",
   "repository": "jshttp/methods",
   "devDependencies": {
+    "csv-parse": "^1.2.0",
     "eslint": "3.17.1",
     "eslint-config-standard": "7.0.0",
     "eslint-plugin-promise": "3.5.0",
     "eslint-plugin-standard": "2.1.1",
     "istanbul": "0.4.5",
-    "mocha": "1.21.5"
+    "mocha": "1.21.5",
+    "request": "^2.81.0"
   },
   "files": [
     "index.js",
@@ -29,7 +31,8 @@
     "lint": "eslint .",
     "test": "mocha --reporter spec --bail --check-leaks test/",
     "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/",
-    "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/"
+    "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/",
+    "scrape-methods": "node scrape-methods.js"
   },
   "browser": {
     "http": false
