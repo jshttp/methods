@@ -10,7 +10,7 @@
   "license": "MIT",
   "repository": "jshttp/methods",
   "devDependencies": {
-    "eslint": "3.17.1",
+    "eslint": "3.19.0",
     "eslint-config-standard": "7.0.0",
     "eslint-plugin-promise": "3.5.0",
     "eslint-plugin-standard": "2.1.1",
