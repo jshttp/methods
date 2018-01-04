@@ -11,9 +11,11 @@
   "repository": "jshttp/methods",
   "devDependencies": {
     "eslint": "3.19.0",
-    "eslint-config-standard": "7.0.0",
-    "eslint-plugin-promise": "3.5.0",
-    "eslint-plugin-standard": "2.1.1",
+    "eslint-config-standard": "10.2.1",
+    "eslint-plugin-import": "2.8.0",
+    "eslint-plugin-node": "5.2.1",
+    "eslint-plugin-promise": "3.6.0",
+    "eslint-plugin-standard": "3.0.1",
     "istanbul": "0.4.5",
     "mocha": "1.21.5"
   },
