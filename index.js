@@ -27,7 +27,7 @@ module.exports = getCurrentNodeMethods() || getBasicNodeMethods()
  */
 
 function getCurrentNodeMethods () {
-  const methods = http.METHODS && http.METHODS.map(function lowerCaseMethod (method) {
+  var methods = http.METHODS && http.METHODS.map(function lowerCaseMethod (method) {
     return method.toLowerCase()
   });
 
