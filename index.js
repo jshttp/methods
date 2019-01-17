@@ -31,7 +31,7 @@ function getCurrentNodeMethods () {
     return method.toLowerCase()
   });
 
-  return methods;
+  return (methods && methods.length > 0) ? methods : false;
 }
 
 /**
