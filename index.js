@@ -29,9 +29,9 @@ module.exports = getCurrentNodeMethods() || getBasicNodeMethods()
 function getCurrentNodeMethods () {
   var methods = http.METHODS && http.METHODS.map(function lowerCaseMethod (method) {
     return method.toLowerCase()
-  });
+  })
 
-  return (methods && methods.length > 0) ? methods : false;
+  return (methods && methods.length > 0) ? methods : false
 }
 
 /**
