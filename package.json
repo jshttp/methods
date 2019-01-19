@@ -30,6 +30,7 @@
   "scripts": {
     "lint": "eslint .",
     "test": "mocha --reporter spec --bail --check-leaks test/",
+    "test-debug": "mocha --inspect-brk test/",
     "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/",
     "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/"
   },

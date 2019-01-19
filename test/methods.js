@@ -1,8 +1,8 @@
-var http = require('http')
 var assert = require('assert')
-var methods = require('..')
 
 describe('methods', function () {
+  var http = require('http')
+  var methods = require('..')
   if (http.METHODS) {
     it('is a lowercased http.METHODS', function () {
       var lowercased = http.METHODS.map(function (method) {
@@ -24,4 +24,48 @@ describe('methods', function () {
       }
     })
   }
+})
+
+describe('empty methods', function () {
+  it('should get the default methods if http.METHODS === []', function () {
+    delete require.cache[require.resolve('http')]
+    delete require.cache[require.resolve('..')]
+    var http = require('http')
+    http.METHODS = []
+    var defaultMethods = require('..')
+    var defaultValues = [
+      'get',
+      'post',
+      'put',
+      'head',
+      'delete',
+      'options',
+      'trace',
+      'copy',
+      'lock',
+      'mkcol',
+      'move',
+      'purge',
+      'propfind',
+      'proppatch',
+      'unlock',
+      'report',
+      'mkactivity',
+      'checkout',
+      'merge',
+      'm-search',
+      'notify',
+      'subscribe',
+      'unsubscribe',
+      'patch',
+      'search',
+      'connect'
+    ]
+    var leng = defaultMethods.length
+    assert.equal(defaultMethods.length, defaultValues.length)
+
+    for (var i = 0; i < leng; i++) {
+      assert.equal(defaultMethods[i], defaultValues[i])
+    }
+  })
 })
