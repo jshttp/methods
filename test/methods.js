@@ -27,7 +27,7 @@ describe('methods', function () {
 })
 
 describe('empty methods', function () {
-  it('should get the default methods if http.METHODS === []', function() {
+  it('should get the default methods if http.METHODS === []', function () {
     delete require.cache[require.resolve('http')]
     delete require.cache[require.resolve('..')]
     var http = require('http')
@@ -67,6 +67,5 @@ describe('empty methods', function () {
     for (var i = 0; i < leng; i++) {
       assert.equal(defaultMethods[i], defaultValues[i])
     }
-    
   })
 })
