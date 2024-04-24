@@ -1,10 +1,10 @@
 # Methods
 
-[![NPM Version][npm-image]][npm-url]
-[![NPM Downloads][downloads-image]][downloads-url]
-[![Node.js Version][node-version-image]][node-version-url]
-[![Build Status][travis-image]][travis-url]
-[![Test Coverage][coveralls-image]][coveralls-url]
+[![NPM Version][npm-version-image]][npm-url]
+[![NPM Downloads][npm-downloads-image]][npm-url]
+[![Node.js Version][node-image]][node-url]
+[![Build Status][ci-image]][ci-url]
+[![Coverage Status][coveralls-image]][coveralls-url]
 
 HTTP verbs that Node.js core's HTTP parser supports.
 
@@ -43,13 +43,12 @@ otherwise it is a snapshot of the verbs from Node.js 0.10.
 
 [MIT](LICENSE)
 
-[npm-image]: https://img.shields.io/npm/v/methods.svg
-[npm-url]: https://npmjs.org/package/methods
-[node-version-image]: https://img.shields.io/node/v/methods.svg
-[node-version-url]: https://nodejs.org/en/download/
-[travis-image]: https://img.shields.io/travis/jshttp/methods.svg
-[travis-url]: https://travis-ci.org/jshttp/methods
-[coveralls-image]: https://img.shields.io/coveralls/jshttp/methods.svg
+[ci-image]: https://badgen.net/github/checks/jshttp/methods/master?label=ci
+[ci-url]: https://github.com/jshttp/methods/actions/workflows/ci.yml
+[coveralls-image]: https://badgen.net/coveralls/c/github/jshttp/methods/master
 [coveralls-url]: https://coveralls.io/r/jshttp/methods?branch=master
-[downloads-image]: https://img.shields.io/npm/dm/methods.svg
-[downloads-url]: https://npmjs.org/package/methods
+[node-image]: https://badgen.net/npm/node/methods
+[node-url]: https://nodejs.org/en/download
+[npm-downloads-image]: https://badgen.net/npm/dm/methods
+[npm-url]: https://npmjs.org/package/methods
+[npm-version-image]: https://badgen.net/npm/v/methods
