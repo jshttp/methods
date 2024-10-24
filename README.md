@@ -17,6 +17,9 @@ with the following differences:
   * Provides the fallback list when using tools like `browserify` without pulling
     in the `http` shim module.
 
+> [!NOTE]
+> If you only have to support modern versions of Node.js, it is highly recommended to use the built-in [`http.METHODS`](https://nodejs.org/api/http.html#httpmethods) module from Node.js core instead of this module.
+
 ## Install
 
 This is a [Node.js](https://nodejs.org/en/) module available through the
