@@ -48,7 +48,7 @@ run('when browserified', function () {
 
 function getCoverageGlobal () {
   for (var key in global) {
-    if (key.substr(0, 6) === '$$cov_') {
+    if (key.slice(0, 6) === '$$cov_') {
       return global[key]
     }
   }
