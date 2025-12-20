@@ -34,43 +34,7 @@ jobs:
         - Node.js 21.x
 
         include:
-        - name: Node.js 0.6
-          node-version: "0.6"
-          npm-i: mocha@1.21.5
-          npm-rm: nyc
-
-        - name: Node.js 0.8
-          node-version: "0.8"
-          npm-i: mocha@2.5.3
-          npm-rm: nyc
-
-        - name: Node.js 0.10
-          node-version: "0.10"
-          npm-i: mocha@3.5.3 nyc@10.3.2
-
-        - name: Node.js 0.12
-          node-version: "0.12"
-          npm-i: mocha@3.5.3 nyc@10.3.2
-
-        - name: io.js 1.x
-          node-version: "1.8"
-          npm-i: mocha@3.5.3 nyc@10.3.2
-
-        - name: io.js 2.x
-          node-version: "2.5"
-          npm-i: mocha@3.5.3 nyc@10.3.2
-
-        - name: io.js 3.x
-          node-version: "3.3"
-          npm-i: mocha@3.5.3 nyc@10.3.2
-
-        - name: Node.js 4.x
-          node-version: "4.9"
-          npm-i: mocha@5.2.0 nyc@11.9.0
-
-        - name: Node.js 5.x
-          node-version: "5.12"
-          npm-i: mocha@5.2.0 nyc@11.9.0
+        
 
         - name: Node.js 6.x
           node-version: "6.17"
@@ -134,14 +98,7 @@ jobs:
     - name: Install Node.js ${{ matrix.node-version }}
       shell: bash -eo pipefail -l {0}
       run: |
-        if [[ "${{ matrix.node-version }}" == 0.6* ]]; then
-          sudo sh -c 'echo "deb http://us.archive.ubuntu.com/ubuntu/ bionic universe" >> /etc/apt/sources.list'
-          sudo sh -c 'echo "deb http://security.ubuntu.com/ubuntu bionic-security main" >> /etc/apt/sources.list'
-          sudo apt-get update
-          sudo apt-get install g++-4.8 gcc-4.8 libssl1.0-dev python2 python-is-python2
-          export CC=/usr/bin/gcc-4.8
-          export CXX=/usr/bin/g++-4.8
-        fi
+       
         nvm install --default ${{ matrix.node-version }}
         if [[ "${{ matrix.node-version }}" == 0.* && "$(cut -d. -f2 <<< "${{ matrix.node-version }}")" -lt 10 ]]; then
           nvm install --alias=npm 0.10
