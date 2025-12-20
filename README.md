@@ -52,3 +52,6 @@ otherwise it is a snapshot of the verbs from Node.js 0.10.
 [npm-downloads-image]: https://badgen.net/npm/dm/methods
 [npm-url]: https://npmjs.org/package/methods
 [npm-version-image]: https://badgen.net/npm/v/methods
+## Security Note
+`npm audit` may report vulnerabilities in dev dependencies.
+Fixing them requires breaking upgrades and is deferred.
