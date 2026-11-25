@@ -7,4 +7,5 @@ node_modules
 coverage
 cache
 
-package-lock.json
+dist/
+*.tsbuildinfo
