@@ -4,51 +4,34 @@
 [![NPM Downloads][npm-downloads-image]][npm-url]
 [![Node.js Version][node-image]][node-url]
 [![Build Status][ci-image]][ci-url]
-[![Coverage Status][coveralls-image]][coveralls-url]
+[![Coverage Status][coverage-image]][coverage-url]
 
 HTTP verbs that Node.js core's HTTP parser supports.
 
-This module provides an export that is just like `http.METHODS` from Node.js core,
-with the following differences:
-
-  * All method names are lower-cased.
-  * Contains a fallback list of methods for Node.js versions that do not have a
-    `http.METHODS` export (0.10 and lower).
-  * Provides the fallback list when using tools like `browserify` without pulling
-    in the `http` shim module.
+This package exports a lowercased copy of Node.js's `http.METHODS`. Browser bundles use a snapshot of the methods supported by Node.js 0.10 and need no HTTP shim.
 
 ## Install
 
-This is a [Node.js](https://nodejs.org/en/) module available through the
-[npm registry](https://www.npmjs.com/). Installation is done using the
-[`npm install` command](https://docs.npmjs.com/getting-started/installing-npm-packages-locally):
-
 ```sh
-$ npm install methods
+npm install methods
 ```
 
 ## API
 
 ```js
-var methods = require('methods')
+import { methods } from "methods";
 ```
-
-### methods
-
-This is an array of lower-cased method names that Node.js supports. If Node.js
-provides the `http.METHODS` export, then this is the same array lower-cased,
-otherwise it is a snapshot of the verbs from Node.js 0.10.
 
 ## License
 
 [MIT](LICENSE)
 
-[ci-image]: https://badgen.net/github/checks/jshttp/methods/master?label=ci
+[ci-image]: https://img.shields.io/github/actions/workflow/status/jshttp/methods/ci.yml?branch=master
 [ci-url]: https://github.com/jshttp/methods/actions/workflows/ci.yml
-[coveralls-image]: https://badgen.net/coveralls/c/github/jshttp/methods/master
-[coveralls-url]: https://coveralls.io/r/jshttp/methods?branch=master
-[node-image]: https://badgen.net/npm/node/methods
+[coverage-image]: https://img.shields.io/codecov/c/gh/jshttp/methods
+[coverage-url]: https://codecov.io/gh/jshttp/methods
+[node-image]: https://img.shields.io/node/v/methods
 [node-url]: https://nodejs.org/en/download
-[npm-downloads-image]: https://badgen.net/npm/dm/methods
+[npm-downloads-image]: https://img.shields.io/npm/dm/methods
 [npm-url]: https://npmjs.org/package/methods
-[npm-version-image]: https://badgen.net/npm/v/methods
+[npm-version-image]: https://img.shields.io/npm/v/methods
