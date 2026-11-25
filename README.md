@@ -8,7 +8,7 @@
 
 HTTP verbs that Node.js core's HTTP parser supports.
 
-This package exports a lowercased copy of Node.js's `http.METHODS`. Browser bundles use a snapshot of the methods supported by Node.js 0.10 and need no HTTP shim.
+This package exports a lowercased copy of [Node.js's `http.METHODS`](https://nodejs.org/api/http.html#httpmethods). Browser bundles use a snapshot of the methods supported by Node.js 0.10 and need no HTTP shim.
 
 ## Install
 
